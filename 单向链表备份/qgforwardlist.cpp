@@ -201,7 +201,7 @@ bool QGList::pop_back()
 QGList::Node* QGList::SearchNode(unsigned int index)
 {
 	unsigned int i = 1;
-	Node* pt = new Node;
+	Node* pt;
 	pt = List.head;
 	while (pt && i < index)
 	{
@@ -214,7 +214,6 @@ QGList::Node* QGList::SearchNode(unsigned int index)
 	{
 		return NULL;
 	}
-	delete pt;
 	pt = NULL;
 }
 
@@ -271,7 +270,7 @@ bool QGList::erase(int index)
 	}
 	if (index == 1)
 	{
-		Node* pt = new Node;
+		Node* pt;
 		pt = List.head;
 		List.head = List.head->next;
 		delete pt;
@@ -279,6 +278,10 @@ bool QGList::erase(int index)
 		return true;
 	}
 	Node* pt = SearchNode(index - 1);
+	if (List.tail == pt->next)
+	{
+		List.tail = pt;
+	}
 	if (!pt)
 	{
 		delete pt;

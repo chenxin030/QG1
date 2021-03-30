@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{d783b9e7-1ecf-4926-bcf3-24cbb90b1e6e}</ProjectGuid>
-    <RootNamespace>备份的备份</RootNamespace>
+    <ProjectGuid>{7d6a526b-17df-4063-a2c7-eaceff947b8d}</ProjectGuid>
+    <RootNamespace>单向链表备份</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,13 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="qgforwardlist.h" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="qgforwardlist.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="menu.h" />
-    <ClInclude Include="qgforwardlist.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
