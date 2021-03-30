@@ -1,9 +1,0 @@
-﻿  main.cpp
-  menu.cpp
-  qgforwardlist.cpp
-  正在生成代码...
-C:\Users\hp\Desktop\备份的备份\备份的备份\备份的备份\qgforwardlist.cpp(70): warning C4715: “QGList::front”: 不是所有的控件路径都返回值
-C:\Users\hp\Desktop\备份的备份\备份的备份\备份的备份\qgforwardlist.cpp(79): warning C4715: “QGList::back”: 不是所有的控件路径都返回值
-C:\Users\hp\Desktop\备份的备份\备份的备份\备份的备份\qgforwardlist.cpp(109): warning C4172: 返回局部变量或临时变量的地址: nnew
-C:\Users\hp\Desktop\备份的备份\备份的备份\备份的备份\qgforwardlist.cpp(320): warning C4715: “QGList::clear”: 不是所有的控件路径都返回值
-  备份的备份.vcxproj -> C:\Users\hp\Desktop\备份的备份\备份的备份\Debug\备份的备份.exe
